@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #efefef;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 101vh;
+  overflow-x: hidden;
+}
+
+/* Navbar Start */
+.navbar-group {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+  background-color: #efefef;
+  flex-wrap: wrap;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  display: flex;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+.navbar a
+ {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  margin-inline: 0.5 rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #3454d1;
+}
+
+.navbar a:active {
+  opacity: 0.7;
+}
+
+/* Navbar End */
+
+/* Homepage Start */
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage {
+  background-image: url("background2-homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.homepage .content {
+  max-width: 50%;
+  margin: 10rem 5.5rem;
+  color: white;
+}
+
+.homepage .content h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.homepage .content p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: lightgray;
+  margin-bottom: 3rem;
+}
+
+.homepage .content .subs-button {
+  color: white;
+  background-color: #3454d1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 500px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.homepage .content .subs-button:active {
+  opacity: 0.7;
+  border: 1px solid #3454d1;
+}
+
+/* Homepage End */
+
+/* HTML, CSS, Javascript Section Start */
+.group-all {
+  display: flex;
+}
+
+.box {
+  max-width: 89%;
+  margin: 0 auto;
+  width: 89%;
+  padding: 1.2rem;
+  margin-block: 3rem 2.5rem;
+  background-color: #3454d1;
+  opacity: 0.9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.htmlTitle,
+.cssTitle,
+.jsTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.htmlBox,
+.cssBox,
+.jsBox {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 60%;
+  background-color: #f0f0f0;
+  margin: 0.5rem 1.5rem 0 4.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.htmlBox .description,
+.cssBox .description,
+.jsBox .description {
+  padding: 1.8rem 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+.question p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.question img {
+  width: 98%;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+.question ol {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.question li {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.question p {
+  margin-bottom: 0.5rem;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+/* HTML, CSS, Javascript Section End */
+
+/* Aside Start */
+.aside {
+  width: 27%;
+}
+
+.aside-box {
+  background-color: #f0f0f0;
+  padding: 1.5rem 3rem;
+  margin: 0.55rem 0 0 0;
+  padding-bottom: 33px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aside h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  font-size: 1.6rem;
+}
+
+.aside a {
+  color: blue;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.group-asidebox {
+  display: flex;
+  align-items: center;
+  margin-block: 0.5rem;
+}
+
+.group-asidebox img {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.group-asidebox a {
+  display: flex;
+}
+
+/* Aside End */
+
+/* Footer Start */
+footer {
+  text-align: center;
+  font-size: 1.3rem;
+  color: grey;
+  margin: 2rem;
+  padding-bottom: 2.6rem;
+}
+
+/* Footer End */
+
+/* Media Queries */
+@media screen and (max-width: 1167px) {
+  .htmlBox,
+  .cssBox,
+  .jsBox {
+    width: 52%;
+    margin-left: 3.6rem;
+  }
+
+  .aside {
+    width: 34.3%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aside {
+    width: 33%;
+  }
+  .aside-box {
+    padding-left: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .htmlBox,
+  .cssBox,
+  .jsBox {
+    width: 51%;
+    margin-left: 2.9rem;
+  }
+
+  .aside {
+    width: 34.3%;
+  }
+
+  .aside-box {
+    padding-left: 1.4rem;
+  }
+
+  .aside-box a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .aside-box {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .navbar-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
+  .homepage .content {
+    width: 100%;
+    margin: 15rem auto 10rem auto;
+  }
+
+  .homepage .content h1,
+  .homepage .content p {
+    text-align: center;
+  }
+
+  .homepage .content h1 {
+    font-size: 3.2rem;
+  }
+
+  .homepage .content p,
+  .question li {
+    font-size: 1.3rem;
+  }
+
+  .homepage .content .subs-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .htmlBox,
+  .cssBox,
+  .jsBox {
+    margin-left: 2.7rem;
+  }
+
+  .aside {
+    width: 25.5%;
+    display: flex;
+  }
+
+  .aside-box {
+    padding-inline: 1.2rem;
+  }
+
+  .aside-box h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .homepage .content h1 {
+    font-size: 2rem;
+  }
+
+  .box {
+    margin-left: 1.5rem;
+  }
+
+  .homepage .content p {
+    font-size: 1.2rem;
+  }
+
+  .homepage .content .subs-button {
+    font-size: 1rem;
+  }
+
+  .group-all {
+    display: block;
+  }
+
+  .htmlTitle,
+  .cssTitle,
+  .jsTitle {
+    font-size: 1.2rem;
+  }
+
+  .htmlBox,
+  .cssBox,
+  .jsBox {
+    width: 87.9%;
+    margin-inline: 1.7rem;
+    padding: 1.2rem;
+  }
+
+  .aside {
+    width: 103.4%;
+    margin-left: 1.7rem;
+  }
+
+  .aside-box {
+    background-color: #f0f0f0;
+    width: 85%;
+  }
+
+  .aside-box h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: none;
+    border-right: 1px solid black;
+    padding-inline: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .aside-box a {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  .htmlBox .description,
+  .cssBox .description,
+  .jsBox .description {
+    padding: 0 0.5rem;
+  }
+
+  .question h3,
+  .question li {
+    font-size: 1.2rem;
+  }
+
+  .question p {
+    font-size: 1rem;
+  }
+
+  .aside-box {
+    display: block;
+  }
+
+  .aside-box h3 {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .aside-box a {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .navbar a {
+    padding: 0.5rem 0.25rem;
+  }
+}
